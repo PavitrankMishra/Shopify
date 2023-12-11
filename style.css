@@ -1,5 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
 * {
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: 'PT Serif', serif;
+}
+
+#header {
+    display:flex;
+    align-items:Center;
+    justify-content:space-between;
+    padding:20px 80px;
+    background:#E3E6F3;
+}
+
+#navbar {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#navbar li {
+    list-style:none;
+    padding:0px 20px;
 }
