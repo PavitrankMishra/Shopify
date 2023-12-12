@@ -25,3 +25,17 @@
     list-style:none;
     padding:0px 20px;
 }
+
+#navbar li a {
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    color:black;
+    transition:0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    text-decoration:underline;
+    color:#088178;
+}
