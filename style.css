@@ -13,6 +13,11 @@
     justify-content:space-between;
     padding:20px 80px;
     background:#E3E6F3;
+    box-shadow:0 5px 15px rgba(0,0,0,1);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
 }
 
 #navbar {
@@ -24,6 +29,7 @@
 #navbar li {
     list-style:none;
     padding:0px 20px;
+    position:relative;
 }
 
 #navbar li a {
@@ -36,6 +42,102 @@
 
 #navbar li a:hover,
 #navbar li a.active {
-    text-decoration:underline;
+    /* text-decoration:underline; */
     color:#088178;
+}
+
+/* #navbar li a:hover::after, */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content:"";
+    width:30%;
+    height:2px;
+    background:#088178;
+    bottom:-4px;
+    left:20px;
+    position:absolute;
+}
+
+h1 {
+    color:#088178;
+    font-size:70px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+h2 {
+    font-size:70px;
+    font-weight:bold;
+}
+
+h3 {
+    font-size:30px;
+}
+
+h4 {
+    color:rgb(117, 95, 95);
+    font-size:20px;
+}
+
+#hero {
+    background-image:url("img/hero4.png");
+    background-size:cover;
+    width:100%;
+    height:90vh;
+    position:top 25% right 0;
+    padding:0 80px;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    flex-direction:column;
+
+}
+
+#hero-btn {
+    background-image:url("img/button.png");
+    background-size:cover;
+    background-color:transparent;
+    border:none;
+    height:50px;
+    width:230px;
+    /* cursor:pointer; */
+    color:#088178;
+}
+
+#hero-btn:hover {
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#feature {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+#feature .fe-box {
+    width:180px;
+    padding:25px 15px;
+    text-align:center;
+    border:2px solid #cce7d0;
+    box-shadow:10px 10px 54px rgba(70,62,221,0.1);
+    margin:25px 25px;
+}
+
+
+#feature .fe-box p {
+    padding:9px 8px 6px 8px;
+    line-height:1;
+    border-radius:4px;
+    color:#088178;
+    background-color:rgb(254, 182, 194);
+}
+
+#feature .fe-box:hover {
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.3);
+}
+
+#feature .fe-box img {
+    width:100%;
+    margin-bottom:10px;
 }
