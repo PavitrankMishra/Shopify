@@ -150,11 +150,12 @@ h4 {
     height:240px;
     width:240px;
     border-radius:8px;
+    /* margin-top:20px; */
 }
 
 .pro-container {
     height:400px;
-    width:350px;
+    width:300px;
     border:2px solid black;
     display:flex;
     flex-direction:column;
@@ -169,9 +170,6 @@ h4 {
 .des {
     display:flex;
     flex-direction:column;
-    /* align-items:flex-start; */
-    /* justify-content: flex-start; */
-    /* border:2px solid red; */
     margin-right:50px;
 }
 .des span{
@@ -214,3 +212,46 @@ h4 {
     top:10px;
 }
 
+.container {
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+#banner {
+    background-image: url(img/banner/b2.jpg);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:250px;
+    margin: 20px 0px;
+    font-size: 50px;
+}
+
+#banner h4 {
+    color:white;
+    font-size:50px;
+}
+
+#banner span {
+    /* font-size:75px; */
+    color:Red;
+}
+
+#explore-more {
+    height:55px;
+    width:200px;
+    margin:10px;
+    border-radius:10px;
+}
+
+#explore-more:hover {
+    border-radius:10px;
+    background-color:#088178;
+    cursor:pointer;
+    text-decoration:underline;
+    font-weight:bold;
+    color:white;
+}
