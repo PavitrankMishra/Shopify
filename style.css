@@ -380,3 +380,60 @@ h4 {
     align-items:flex-start;
     justify-content:center;
 }
+
+#newsletter {
+    text-transform:capitalize;
+    background-image:url(img/banner/b14.png);
+    height:150px;
+    background-color:rgb(2, 2, 62);
+    margin-bottom:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    position:relative;
+}
+
+#newsletter h3 {
+    color:white;
+    margin-bottom:20px;
+    margin-left:80px;
+}
+
+#newsletter h4 {
+    color:rgb(79, 98, 97);
+    margin-bottom:10px;
+    margin-left:80px;
+}
+
+#newsletter span {
+    color:orange;
+}
+
+.email input {
+    width:320px;
+    height:45px;
+    border-radius:4px;
+}
+
+.email .signup {
+    width:120px;
+    height:45px;
+    color:white;
+    background-color:#088178;
+    border:none;
+    border-radius:2.5px;
+    font-size:15px;
+    text-transform:capitalize;
+}
+
+.email .signup:hover {
+    cursor:pointer;
+}
+
+.email {
+    position:absolute;
+    right:80px;
+    bottom:50px;
+    border-radius:10px;
+}
