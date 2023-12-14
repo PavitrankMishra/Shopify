@@ -437,3 +437,46 @@ h4 {
     bottom:50px;
     border-radius:10px;
 }
+
+#more-information {
+    margin:75px;
+    text-transform:capitalize;
+    display:flex;
+    justify-content:space-around;
+    line-height:0.8cm;
+}
+
+#more-information i {
+    margin:5px;
+}
+
+#more-information h3 {
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+#more-information span {
+    color:black;
+    font-weight: bold;
+}
+
+#more-information p {
+    color:lightslategrey;
+}
+
+#section-4 p {
+    margin-bottom:10px;
+}
+
+#section-4 .app-store, .google-store {
+    margin-bottom:10px;
+    border:1px solid green;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+
+.more-info1 {
+    margin-top:20px;
+    margin-bottom:20px;
+}
