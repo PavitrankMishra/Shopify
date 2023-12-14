@@ -314,3 +314,21 @@ h4 {
     border:1px solid #088178;
     cursor:pointer;
 }
+
+#new-banner {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+
+.banner-1 {
+    background-image: url(img/banner/b7.jpg);
+}
+
+.banner-2 {
+    background-image:url(img/banner/b4.jpg);
+}
+.banner-3 {
+    background-image:url(img/banner/b18.jpg);
+}
