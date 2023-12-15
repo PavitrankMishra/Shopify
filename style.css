@@ -236,7 +236,6 @@ h4 {
 }
 
 #banner span {
-    /* font-size:75px; */
     color:Red;
 }
 
@@ -324,8 +323,6 @@ h4 {
     justify-content:center;
     width:1500px;
     margin-bottom:50px;
-    /* border:2px solid red; */
-    /* margin: 0px 20px; */
 }
 
 #new-banner h2 {
@@ -479,4 +476,10 @@ h4 {
 .more-info1 {
     margin-top:20px;
     margin-bottom:20px;
+}
+
+#footer {
+    text-align:center;
+    color:lightslategrey;
+    margin:0;
 }
