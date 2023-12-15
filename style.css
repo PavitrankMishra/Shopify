@@ -484,27 +484,37 @@ h4 {
     margin:0;
 }
 
+.cartTab {
+    text-transform:uppercase;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    inset:0 0 bottom left;
+    display:grid;
+    grid-template-rows:70px 1fr 70px;
+    background-color:black;
+    width:300px;
+}
 
-/************************Start media query **********************/
+.cartTab h1{
+    font-size:25px;
+    font-weight:bold;
+}
 
-@media (max-width:1030px) {
-    #navbar {
-        display:flex;
-        flex-direction:column;
-        align-items:flex-start;
-        justify-content:flex-start;
-        position:fixed;
-        top:0;
-        right:0;
-        height:100vh;
-        width:300px;
-        /* border:2px solid red; */
-        background-color:#E3E6F3;
-        box-shadow:0px 40px 60px rgba(0,0,0,0.1);
-        padding:80px 0 0 10px;
-    }
+.cartTab .btn{
+    cursor:pointer;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+}
 
-    #navbar li {
-        line-height:40px;
-    }
+.cartTab .btn button {
+    background-color:#E8BC0E;
+    border:none;
+    cursor:pointer;
+    font-weight:500;
+}
+
+.cartTab .btn .close {
+    background-color:#eee;
 }
