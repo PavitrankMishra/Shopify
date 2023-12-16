@@ -560,3 +560,15 @@ body.showCart .cartTab {
 .listCart .item:nth-child(odd) {
     background-color:black;
 }
+
+/************************** Shop Page **************************/
+#shoppingPage-header {
+    background:url(img/banner/b1.jpg);
+    color:white;
+    width:100%;
+    height:300px;
+    display:flex;
+    align-items:Center;
+    justify-content:center;
+    flex-direction:column;
+}
