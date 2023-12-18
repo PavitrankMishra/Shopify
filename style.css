@@ -690,6 +690,7 @@ body.showCart .cartTab {
     width:100%;
     height:300px;
     margin-bottom:40px;
+    text-transform:capitalize;
 }
 
 #blog-banner-1 h3 {
@@ -767,4 +768,56 @@ body.showCart .cartTab {
     font-weight:700;
     color:#c9cbce;
     z-index:-9;
+}
+
+/****************************About Section**************************/
+#about-banner-1 {
+    background-image:url(img/about/banner.png);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:300px;
+    flex-direction:column;
+    color:white;
+}
+
+#about-banner-tagline {
+    color:white;
+    margin:20px;
+}
+
+#about-center {
+    /* border:2px solid red; */
+    display:flex;
+    margin:50px;
+}
+
+#left-center {
+    margin:20px;
+}
+
+#left-center img {
+    width:700px;
+    height:500px;
+}
+
+#right-center {
+    margin:20px;
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content:flex-start;
+}
+
+#right-center h1 {
+    color:black;
+    margin:20px;
+    font-size:60px;
+    text-transform:capitalize;
+}
+
+#right-center span, abbr{
+    margin:20px;
+    line-height:30px;
+    font-size:20px;
 }
