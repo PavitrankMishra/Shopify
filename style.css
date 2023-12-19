@@ -845,3 +845,58 @@ body.showCart .cartTab {
     height:100%;
     border-radius:20px;
 }
+
+/****************************Contact Page*****************************/
+#contact-banner-1 {
+    background-image:url(img/about/banner.png);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    flex-direction:column;
+    height:300px;
+    color:white;
+    
+}
+
+#contact-details {
+    display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+    /* width:100%; */
+    text-transform:capitalize;
+    margin:50px;
+    border:2px solid red;
+    list-style:none;
+}
+
+#details {
+    border:2px solid green;
+    width:50%;
+}
+
+#contact-details span{
+    color:darkgrey;
+    border:2px solid yellow;
+    /* margin:30px; */
+}
+
+#contact-details h2 {
+    /* width:100%; */
+    font-size:30px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+#contact-details h3 {
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+#details div li {
+    display:flex;
+    gap:20px;
+    color:#5e615e;
+    margin-bottom:10px;
+}
