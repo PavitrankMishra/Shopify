@@ -17,22 +17,24 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <body class = "">
+  <body class="">
     <section id="header">
       <a href="#"><img src="img/logo.png" alt="" class="logo" /></a>
       <div>
         <ul id="navbar">
-          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li>
-            <img
+            <a href="cart.html">
+              <img
                 src="img/local_mall_FILL0_wght400_GRAD0_opsz24.png"
                 alt=""
                 class="bag"
-            />
+              />
+            </a>
           </li>
         </ul>
       </div>
@@ -41,14 +43,10 @@
         <div class="listCart">
           <div class="item">
             <div class="image">
-              <img src="img/products/f1.jpg" alt="">
+              <img src="img/products/f1.jpg" alt="" />
             </div>
-            <div class="name">
-              Name
-            </div>
-            <div class="totalPrice">
-              $200
-            </div>
+            <div class="name">Name</div>
+            <div class="totalPrice">$200</div>
             <div class="quantity">
               <span class="minus"><</span>
               <span>1</span>
@@ -569,8 +567,7 @@
         <h3 class="contact">contact</h3>
         <div class="more-info1">
           <p>
-            <span>address:</span>562 Wellington Road.Street 32.San
-            Francisco
+            <span>address:</span>562 Wellington Road.Street 32.San Francisco
           </p>
           <p><span>Phone:</span>+01 2222 365 / (+91)01 2345 6789</p>
           <p><span>Hours:</span>10:00 - 18:00, Mon - Sat</p>
@@ -605,11 +602,11 @@
         <img src="img/pay/play.jpg" alt="" class="google-store" />
         <p>secured payment gateways</p>
         <img src="img/pay/pay.png" alt="" class="payments" />
-      </div> 
+      </div>
     </section>
 
     <section id="footer">
-        <p>© Cpoyright 2023 registered</p>
+      <p>© Cpoyright 2023 registered</p>
     </section>
   </body>
   <script src="script.js"></script>
