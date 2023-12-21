@@ -5,7 +5,7 @@ const products = [
         price:29.99,
         instock:100,
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto minus architecto nisi sunt assumenda tenetur itaque debitis ea dignissimos dolore, laboriosam dolorum aspernatur. Nobis vel velit odit quis. Eum, exercitationem",
-        imgSrc:"img/products/n8.jpg"
+        imgSrc:"img/products/f1.jpg"
     },
     {
         id:2,

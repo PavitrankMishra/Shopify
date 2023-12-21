@@ -15,7 +15,7 @@
 
 // SELECT ELEMENTS
 
-const productEl = document.querySelector("#featuredproducts");
+const productEl = document.querySelector(".container");
 
 // RENDER ELEMENTS
 function renderProducts() {
