@@ -15,7 +15,7 @@
 
 // SELECT ELEMENTS
 
-const productEl = document.querySelector('#featuredproducts');
+const productEl = document.querySelector("#featuredproducts");
 
 // RENDER ELEMENTS
 function renderProducts() {
@@ -25,7 +25,7 @@ function renderProducts() {
         <img src="${product.imgSrc}" alt="" />
         <div class="lower">
           <div class="des">
-            <span>adidas</span>
+            <span>${product.name}</span>
             <p>Cartoon Astronaut T-Shirts</p>
             <div class="star">
               <i class="fas fa-star"></i>
@@ -34,7 +34,7 @@ function renderProducts() {
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <p class="price">$78</p>
+            <p class="price">$ ${product.price}</p>
           </div>
           <div class="cart">
             <a href="cart.html">
@@ -47,7 +47,7 @@ function renderProducts() {
         </div>
       </div>
       `;
-      console.log(product);
+    console.log(product);
   });
 }
 

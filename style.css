@@ -157,6 +157,7 @@ h4 {
 .pro-container {
     height:400px;
     width:300px;
+    /* flex-direction:row; */
     border:2px solid black;
     display:flex;
     flex-direction:column;
@@ -166,6 +167,7 @@ h4 {
     border-radius:20px;
     margin:20px;
     position:relative;
+    margin:10px;
 }
 
 .des {
@@ -217,6 +219,7 @@ h4 {
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
+    flex-direction:row;
 }
 
 #banner {
