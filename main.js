@@ -20,6 +20,7 @@ const productEl = document.querySelector(".container");
 
 // RENDER ELEMENTS
 function renderProducts() {
+  if(productEl) {
   products.forEach((product) => {
     if (product.id >= 9) {
       return;
@@ -52,7 +53,7 @@ function renderProducts() {
         </div>
       </div>
       `;
-  });
+  })};
 }
 
 renderProducts();
@@ -60,6 +61,7 @@ renderProducts();
 const productEl2 = document.querySelector("#new-container");
 
 function renderExtraProducts() {
+  if(productEl2) {
   products.forEach((product) => {
     if (product.id <= 8) {
       return;
@@ -91,7 +93,7 @@ function renderExtraProducts() {
     </div>
   </div>`;
     // console.log(product.id);
-  });
+  })};
 }
 renderExtraProducts();
 
@@ -99,6 +101,7 @@ renderExtraProducts();
 const featuresApp = document.querySelector("#feature");
 
 function renderFeatures() {
+  if(featuresApp) {
   features.forEach((feature) => {
     featuresApp.innerHTML += 
     `<div class="fe-box">
@@ -106,9 +109,8 @@ function renderFeatures() {
     <p>"${feature.desc}"</p>
   </div>
   `;
-  // console.log(feature);
   
-  })
+  })}
 }
 renderFeatures();
 
@@ -116,6 +118,7 @@ renderFeatures();
 const firstBanner = document.querySelector("#sm-banner");
 
 function renderBanner() {
+  if(firstBanner) {
   smallBanner.forEach((small) => {
     firstBanner.innerHTML += 
     `
@@ -126,7 +129,7 @@ function renderBanner() {
         <button class="white">${small.btn}</button>
       </div>
     `;
-  });
+  })};
 }
 
 renderBanner();
@@ -135,6 +138,7 @@ renderBanner();
 const bannerDescription = document.querySelector("#new-banner");
 
 function renderbanner() {
+  if(bannerDescription) {
   banner.forEach((banners) => {
     bannerDescription.innerHTML += `
     <div class="banner-${banners.id}">
@@ -142,7 +146,50 @@ function renderbanner() {
     <h3>${banners.desc2}</h3>
   </div>
     `;
-  }); 
+  })}; 
 }
 
 renderbanner();
+
+/************************* Render Contact List****************** */
+const getPeople = document.querySelector(".people");
+
+function renderPeople() {
+  if(getPeople) {
+    people.forEach((peoples) => {
+      getPeople.innerHTML += `
+      <div>
+          <img src="${peoples.imgSrc}" alt="" />
+          <p>
+            <span>${peoples.name}</span> <br />${peoples.position}<br />
+            Phone:${peoples.phone}<br />Email:${peoples.email}
+          </p>
+        </div>
+      `;
+  })};
+}
+
+/************************* Render Blog List ********************** */
+const getBlog = document.querySelector("#blog");
+
+function renderBlog() {
+  if(getBlog) {
+    blogs.forEach((blog) => {
+      getBlog.innerHTML += `
+      <div class="blog-box">
+        <div class="blog-img">
+          <img src="${blog.imgSrc}" alt="" />
+        </div>
+        <div class="blog-details">
+          <h4>${blog.topic}</h4>
+          <p>${blog.desc}
+          </p>
+          <a href="#">Continue Reading ...</a>
+        </div>
+        <h1>${blog.date}</h1>
+      </div>
+      `;
+    })};
+}
+
+renderBlog();

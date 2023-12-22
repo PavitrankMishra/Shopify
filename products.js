@@ -139,25 +139,29 @@ const people = [
         name:"John Doe",
         position:"Senior Marketing Manager",
         phone:"+000 123 000 77 88",
-        email:"johndoe@gmail.com"
+        email:"johndoe@gmail.com",
+        imgSrc:"img/people/1.png"
     },
     {
         id:2,
         name:"William Smith",
         position:"Senior Marketing Manager",
         phone:"+000 123 000 77 88",
-        email:"williamsmith@gmail.com"
+        email:"williamsmith@gmail.com",
+        imgSrc:"img/people/2.png"
     },
     {
         id:1,
         name:"Emma Stone",
         position:"Senior Marketing Manager",
         phone:"+000 123 000 77 88",
-        email:"emmastone@gmail.com"
+        email:"emmastone@gmail.com",
+        imgSrc:"img/people/3.png"
     },
 ]
 
 
+// <-------------------- Features --------------->
 const features = [
     {
         id:1,
@@ -225,6 +229,42 @@ const smallBanner = [
         btn:"Collection",
     },
 ]
+
+/************************** Blog Details ********************** */
+
+const blogs = [
+    {
+        id:1,
+        imgSrc:"img/blog/b1.jpg",
+        topic:"the cotton jersey zip - up hoodie",
+        desc:"kisckstarter man braid goadard coloring book Raclette waistcoat selfies yr wolf chartreues hexagon iron godard...",
+        date:"13/01"
+    },
+    {
+        id:2,
+        imgSrc:"img/blog/b2.jpg",
+        topic:"the cotton jersey zip - up hoodie",
+        desc:"kisckstarter man braid goadard coloring book Raclette waistcoat selfies yr wolf chartreues hexagon iron godard...",
+        date:"13/01"
+    },
+    {
+        id:3,
+        imgSrc:"img/blog/b3.jpg",
+        topic:"the cotton jersey zip - up hoodie",
+        desc:"kisckstarter man braid goadard coloring book Raclette waistcoat selfies yr wolf chartreues hexagon iron godard...",
+        date:"13/01"
+    },
+    {
+        id:4,
+        imgSrc:"img/blog/b4.jpg",
+        topic:"the cotton jersey zip - up hoodie",
+        desc:"kisckstarter man braid goadard coloring book Raclette waistcoat selfies yr wolf chartreues hexagon iron godard...",
+        date:"13/01"
+    },
+]
+
+
+
 // console.log(products[0].id);
 
 // for(key in products) {
