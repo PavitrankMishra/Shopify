@@ -20,14 +20,14 @@ const productEl = document.querySelector(".container");
 
 // RENDER ELEMENTS
 function renderProducts() {
-  if(productEl) {
-  products.forEach((product) => {
-    if (product.id >= 9) {
-      return;
-    }
+  if (productEl) {
+    products.forEach((product) => {
+      if (product.id >= 9) {
+        return;
+      }
 
-    productEl.innerHTML += `
-        <div class="pro-container">
+      productEl.innerHTML += `
+        <div class="pro-container" onclick="addToCart(${product.id})">
         <img src="${product.imgSrc}" alt="" />
         <div class="lower">
           <div class="des">
@@ -44,7 +44,7 @@ function renderProducts() {
           </div>
           <div class="cart">
             <a href="cart.html">
-              <img
+              <img 
                 src="img/shopping_cart_FILL0_wght400_GRAD0_opsz24.png"
                 alt=""
               />
@@ -53,21 +53,43 @@ function renderProducts() {
         </div>
       </div>
       `;
-  })};
+    });
+  }
 }
 
 renderProducts();
 
+/********************* Cart Array ***************** */
+const cart = [];
+
+/************************** Add To Cart ************************* */
+
+function addToCart(id) {
+  const item = products.find((product) => product.id === id);
+  if (cart.some((item) => item.id === id)) {
+    alert("Product already present in the cart");
+  } else {
+    cart.push({
+      ...item,
+      numberOfUnits:1,
+    });
+  }
+  console.log(item);
+  
+
+  console.log(cart);
+}
+
 const productEl2 = document.querySelector("#new-container");
 
 function renderExtraProducts() {
-  if(productEl2) {
-  products.forEach((product) => {
-    if (product.id <= 8) {
-      return;
-    }
+  if (productEl2) {
+    products.forEach((product) => {
+      if (product.id <= 8) {
+        return;
+      }
 
-    productEl2.innerHTML += `<div class="pro-container">
+      productEl2.innerHTML += `<div class="pro-container" onclick="addToCart(${product.id})">
     <img src="${product.imgSrc}" alt="" />
     <div class="lower">
       <div class="des">
@@ -92,8 +114,9 @@ function renderExtraProducts() {
       </div>
     </div>
   </div>`;
-    // console.log(product.id);
-  })};
+      // console.log(product.id);
+    });
+  }
 }
 renderExtraProducts();
 
@@ -101,16 +124,15 @@ renderExtraProducts();
 const featuresApp = document.querySelector("#feature");
 
 function renderFeatures() {
-  if(featuresApp) {
-  features.forEach((feature) => {
-    featuresApp.innerHTML += 
-    `<div class="fe-box">
+  if (featuresApp) {
+    features.forEach((feature) => {
+      featuresApp.innerHTML += `<div class="fe-box">
     <img src="${feature.imgSrc}" alt="" />
     <p>"${feature.desc}"</p>
   </div>
   `;
-  
-  })}
+    });
+  }
 }
 renderFeatures();
 
@@ -118,10 +140,9 @@ renderFeatures();
 const firstBanner = document.querySelector("#sm-banner");
 
 function renderBanner() {
-  if(firstBanner) {
-  smallBanner.forEach((small) => {
-    firstBanner.innerHTML += 
-    `
+  if (firstBanner) {
+    smallBanner.forEach((small) => {
+      firstBanner.innerHTML += `
     <div class="${small.id}">
         <h4>${small.name}</h4>
         <p>${small.offer}</p>
@@ -129,7 +150,8 @@ function renderBanner() {
         <button class="white">${small.btn}</button>
       </div>
     `;
-  })};
+    });
+  }
 }
 
 renderBanner();
@@ -138,15 +160,16 @@ renderBanner();
 const bannerDescription = document.querySelector("#new-banner");
 
 function renderbanner() {
-  if(bannerDescription) {
-  banner.forEach((banners) => {
-    bannerDescription.innerHTML += `
+  if (bannerDescription) {
+    banner.forEach((banners) => {
+      bannerDescription.innerHTML += `
     <div class="banner-${banners.id}">
     <h2>${banners.desc1}</h2>
     <h3>${banners.desc2}</h3>
   </div>
     `;
-  })}; 
+    });
+  }
 }
 
 renderbanner();
@@ -155,7 +178,7 @@ renderbanner();
 const getPeople = document.querySelector(".people");
 
 function renderPeople() {
-  if(getPeople) {
+  if (getPeople) {
     people.forEach((peoples) => {
       getPeople.innerHTML += `
       <div>
@@ -166,14 +189,15 @@ function renderPeople() {
           </p>
         </div>
       `;
-  })};
+    });
+  }
 }
 
 /************************* Render Blog List ********************** */
 const getBlog = document.querySelector("#blog");
 
 function renderBlog() {
-  if(getBlog) {
+  if (getBlog) {
     blogs.forEach((blog) => {
       getBlog.innerHTML += `
       <div class="blog-box">
@@ -189,7 +213,8 @@ function renderBlog() {
         <h1>${blog.date}</h1>
       </div>
       `;
-    })};
+    });
+  }
 }
 
 renderBlog();
