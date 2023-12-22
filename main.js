@@ -93,9 +93,9 @@ function renderExtraProducts() {
     // console.log(product.id);
   });
 }
-
 renderExtraProducts();
 
+/********************* Starting Feature **************** */
 const featuresApp = document.querySelector("#feature");
 
 function renderFeatures() {
@@ -110,5 +110,39 @@ function renderFeatures() {
   
   })
 }
-
 renderFeatures();
+
+/************************ 1st Banner ******************** */
+const firstBanner = document.querySelector("#sm-banner");
+
+function renderBanner() {
+  smallBanner.forEach((small) => {
+    firstBanner.innerHTML += 
+    `
+    <div class="${small.id}">
+        <h4>${small.name}</h4>
+        <p>${small.offer}</p>
+        <span>${small.desc}</span>
+        <button class="white">${small.btn}</button>
+      </div>
+    `;
+  });
+}
+
+renderBanner();
+
+/************************ 2nd Banner *************** */
+const bannerDescription = document.querySelector("#new-banner");
+
+function renderbanner() {
+  banner.forEach((banners) => {
+    bannerDescription.innerHTML += `
+    <div class="banner-${banners.id}">
+    <h2>${banners.desc1}</h2>
+    <h3>${banners.desc2}</h3>
+  </div>
+    `;
+  }); 
+}
+
+renderbanner();

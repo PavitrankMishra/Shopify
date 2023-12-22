@@ -191,7 +191,40 @@ const features = [
     },
 ]
 
+const banner = [
+    {
+        id:1,
+        desc1:"Seasonal Sale",
+        desc2:"Winter Collection - 50% Off"
+    },
+    {
+        id:2,
+        desc1:"New Footwear Collection",
+        desc2:"Spring/summer 2022"
+    },
+    {
+        id:3,
+        desc1:"T-shirts",
+        desc2:"New trendy prints"
+    },
+]
 
+const smallBanner = [
+    {
+        id:"banner-box",
+        name:"crazy deals",
+        offer:"buy 1 get 1 free",
+        desc:"The best classic dress is on a sale at cara",
+        btn:"Learn More",
+    },
+    {
+        id:"banner-box banner-box2",
+        name:"spring/summer",
+        offer:"upcomming season",
+        desc:"The best classic dress is on a sale at cara",
+        btn:"Collection",
+    },
+]
 // console.log(products[0].id);
 
 // for(key in products) {
