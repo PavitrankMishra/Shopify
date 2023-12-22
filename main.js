@@ -16,6 +16,7 @@
 // SELECT ELEMENTS
 
 const productEl = document.querySelector(".container");
+// console.log(productEl);
 
 // RENDER ELEMENTS
 function renderProducts() {
@@ -23,6 +24,7 @@ function renderProducts() {
     if (product.id >= 9) {
       return;
     }
+
     productEl.innerHTML += `
         <div class="pro-container">
         <img src="${product.imgSrc}" alt="" />
@@ -88,8 +90,25 @@ function renderExtraProducts() {
       </div>
     </div>
   </div>`;
-    console.log(product.id);
+    // console.log(product.id);
   });
 }
 
 renderExtraProducts();
+
+const featuresApp = document.querySelector("#feature");
+
+function renderFeatures() {
+  features.forEach((feature) => {
+    featuresApp.innerHTML += 
+    `<div class="fe-box">
+    <img src="${feature.imgSrc}" alt="" />
+    <p>"${feature.desc}"</p>
+  </div>
+  `;
+  // console.log(feature);
+  
+  })
+}
+
+renderFeatures();

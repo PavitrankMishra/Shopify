@@ -1,3 +1,5 @@
+// <-------------- Products --------------->
+
 const products = [
     {
         id:1,
@@ -128,6 +130,67 @@ const products = [
         imgSrc:"img/products/n8.jpg",
     },
 ]
+
+// <---------------------- Contact ------------------->
+
+const people = [
+    {
+        id:1,
+        name:"John Doe",
+        position:"Senior Marketing Manager",
+        phone:"+000 123 000 77 88",
+        email:"johndoe@gmail.com"
+    },
+    {
+        id:2,
+        name:"William Smith",
+        position:"Senior Marketing Manager",
+        phone:"+000 123 000 77 88",
+        email:"williamsmith@gmail.com"
+    },
+    {
+        id:1,
+        name:"Emma Stone",
+        position:"Senior Marketing Manager",
+        phone:"+000 123 000 77 88",
+        email:"emmastone@gmail.com"
+    },
+]
+
+
+const features = [
+    {
+        id:1,
+        imgSrc:"img/features/f1.png",
+        desc:"Free Shipping"
+    },
+    {
+        id:2,
+        imgSrc:"img/features/f2.png",
+        desc:"Online Order"
+    },
+    {
+        id:3,
+        imgSrc:"img/features/f3.png",
+        desc:"Save Money"
+    },
+    {
+        id:4,
+        imgSrc:"img/features/f4.png",
+        desc:"Promotions"
+    },
+    {
+        id:5,
+        imgSrc:"img/features/f5.png",
+        desc:"Happy Sell"
+    },
+    {
+        id:6,
+        imgSrc:"img/features/f6.png",
+        desc:"F24/7 Support"
+    },
+]
+
 
 // console.log(products[0].id);
 
