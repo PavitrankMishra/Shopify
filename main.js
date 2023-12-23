@@ -1,17 +1,17 @@
 // console.log("Shopify website");
 
-// let iconBag =  document.querySelector('.bag');
-// let body = document.querySelector('body');
-// let closeCart = document.querySelector('.close');
+let iconBag =  document.querySelector('.bag');
+let body = document.querySelector('body');
+let closeCart = document.querySelector('.close');
 
-// iconBag.addEventListener('click', () => {
-//     console.log("Toggle show cart");
-//     body.classList.toggle('showCart');
-// })
-// closeCart.addEventListener('click', () => {
-//     console.log("Showcart close");
-//     body.classList.toggle('showCart');
-// })
+iconBag.addEventListener('click', () => {
+    console.log("Toggle show cart");
+    body.classList.toggle('showCart');
+})
+closeCart.addEventListener('click', () => {
+    console.log("Showcart close");
+    body.classList.toggle('showCart');
+})
 
 // SELECT ELEMENTS
 
@@ -28,7 +28,7 @@ function renderProducts() {
 
       productEl.innerHTML += `
         <div class="pro-container" onclick="addToCart(${product.id})">
-        <img src="${product.imgSrc}" alt="" />
+        <a href="sproduct.html"><img src="${product.imgSrc}" alt="" /></a>
         <div class="lower">
           <div class="des">
             <span>${product.name}</span>
@@ -74,11 +74,10 @@ function addToCart(id) {
       numberOfUnits:1,
     });
   }
-  console.log(item);
-  
 
-  console.log(cart);
+  // updateCart();
 }
+
 
 const productEl2 = document.querySelector("#new-container");
 
@@ -89,8 +88,8 @@ function renderExtraProducts() {
         return;
       }
 
-      productEl2.innerHTML += `<div class="pro-container" onclick="addToCart(${product.id})">
-    <img src="${product.imgSrc}" alt="" />
+      productEl2.innerHTML += `<div class="pro-container" onclick="addToCart(${product.id})" onclick="window.location.href='sproduct.html';">
+    <a href="sproduct.html"><img src="${product.imgSrc}" alt="" /></a>
     <div class="lower">
       <div class="des">
         <span> ${product.name}</span>
